@@ -41,6 +41,9 @@ const num = Number('23');
 
 /*
 ///////////////////////////////////////
+
+
+/*
 // Function Declarations vs. Expressions
 
 // Function declaration
@@ -56,6 +59,11 @@ const calcAge2 = function (birthYeah) {
 const age2 = calcAge2(1991);
 
 console.log(age1, age2);
+
+*/
+
+
+/*
 
 
 ///////////////////////////////////////

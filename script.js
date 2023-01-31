@@ -14,8 +14,9 @@ if (hasDriversLicense) console.log('I can drive :D');
 // const private = 534;
 */
 
-
-///////////////////////////////////////
+/**
+ 
+ ///////////////////////////////////////
 // Functions
 function logger() {
   console.log('My name is Jonas');
@@ -38,10 +39,9 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
 const num = Number('23');
+ */
 
-/*
 ///////////////////////////////////////
-
 
 /*
 // Function Declarations vs. Expressions
@@ -61,7 +61,6 @@ const age2 = calcAge2(1991);
 console.log(age1, age2);
 
 */
-
 
 /*
 
@@ -123,7 +122,6 @@ console.log(yearsUntilRetirement(1950, 'Mike'));
 
 */
 
-
 ///////////////////////////////////////
 // Coding Challenge #1
 
@@ -147,35 +145,64 @@ HINT: To check if number A is at least double number B, check for A >= 2 * B. Ap
 GOOD LUCK 😀
 */
 
+
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
+// console.log(calcAverage(3, 4, 5));
+
 /*
-const calcAverage = (a, b, c) => (a + b + c) / 3;
-console.log(calcAverage(3, 4, 5));
+const calcAverage = (score1,score2,score3) => ( score1+score2+score3)/3;
 
-// Test 1
-let scoreDolphins = calcAverage(44, 23, 71);
-let scoreKoalas = calcAverage(65, 54, 49);
-console.log(scoreDolphins, scoreKoalas);
 
-const checkWinner = function (avgDolphins, avgKoalas) {
-  if (avgDolphins >= 2 * avgKoalas) {
-    console.log(`Dolphins win 🏆 (${avgDolphins} vs. ${avgKoalas})`);
-  } else if (avgKoalas >= 2 * avgDolphins) {
-    console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolphins})`);
-  } else {
-    console.log('No team wins...');
+console.log(calcAverage(3,4,5));
+
+
+const dolphinesScore = calcAverage(85,54,41);
+const koalasScore = calcAverage(23,34,27);
+console.log(dolphinesScore,koalasScore);
+
+const checkWinner = (dolphineAverage,koalasAverage) => {
+  if(dolphineAverage >= 2* koalasAverage){
+    console.log("Dolphine won");
+  }else if (koalasAverage >= 2* dolphineAverage){
+    console.log("Koalas Won")
+  }else{
+    console.log("Nobody won")
   }
 }
-checkWinner(scoreDolphins, scoreKoalas);
 
-checkWinner(576, 111);
+
+checkWinner(dolphinesScore,koalasScore)
+
+// Test 1
+// let scoreDolphins = calcAverage(44, 23, 71);
+// let scoreKoalas = calcAverage(65, 54, 49);
+// console.log(scoreDolphins, scoreKoalas);
+
+// const checkWinner = function (avgDolphins, avgKoalas) {
+//   if (avgDolphins >= 2 * avgKoalas) {
+//     console.log(`Dolphins win 🏆 (${avgDolphins} vs. ${avgKoalas})`);
+//   } else if (avgKoalas >= 2 * avgDolphins) {
+//     console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolphins})`);
+//   } else {
+//     console.log('No team wins...');
+//   }
+// }
+// checkWinner(scoreDolphins, scoreKoalas);
+
+// checkWinner(576, 111);
 
 // Test 2
-scoreDolphins = calcAverage(85, 54, 41);
-scoreKoalas = calcAverage(23, 34, 27);
-console.log(scoreDolphins, scoreKoalas);
-checkWinner(scoreDolphins, scoreKoalas);
+// scoreDolphins = calcAverage(85, 54, 41);
+// scoreKoalas = calcAverage(23, 34, 27);
+// console.log(scoreDolphins, scoreKoalas);
+// checkWinner(scoreDolphins, scoreKoalas);
 
 
+
+*/
+
+
+/*
 ///////////////////////////////////////
 // Introduction to Arrays
 const friend1 = 'Michael';
